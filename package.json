@@ -1,0 +1,13 @@
+{
+  "name": "wetube",
+  "version": "1.0.0",
+  "description": "wetube",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "homepage": "https://github.com/s280493/wetube#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
