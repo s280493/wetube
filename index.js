@@ -5,12 +5,16 @@ const PORT = 3000
 
 const handleListening = () => console.log(`app listening on port ${PORT}!`)
 
-
 const handleHome = (req, res) => res.send('Hello APP!');
-
 
 const handleProfile = (req,res) => res.send("You are on my profile!");
 
+const betweenHome = (req, res, next) => {
+  console.log('bewteen')
+  next(); // 다음 미들웨어를 실행해준다!
+}
+
+app.use(betweenHome);
 
 app.get('/', (req, res) => handleHome(req, res))
 
